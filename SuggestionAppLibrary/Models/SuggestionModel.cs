@@ -20,9 +20,9 @@ namespace SuggestionAppLibrary.Models
 
         public CategoryModel Category { get; set; }
 
-        public string Author { get; set; }
+        public BasicUserModel Author { get; set; }
 
-        // we need unique uservote thats why we are taking the type hashset
+        // we need unique user vote thats why we are taking the type hashset
         public HashSet<string> UserVotes { get; set; } = new();
 
         public StatusModel SuggestionStatus { get; set; }
